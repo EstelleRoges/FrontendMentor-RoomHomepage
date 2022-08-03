@@ -44,7 +44,7 @@ Your users should be able to:
 
 ### What I learned
 Honestly, I learned how to breathe when I spend several hours trying to solve a problem but don't succeed...they didn't put the chllenge in the "Intermediate" section for nothing! Or I really have to make some serious progress...
-The slider is what took me an awful amount of time. But even if I know it's not perfect, it works pretty well and that's great!
+The slideshow is what took me an awful amount of time. But even if I know it's not perfect, it works pretty well and that's great!
 
  ## Author
 
