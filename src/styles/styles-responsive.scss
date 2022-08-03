@@ -1,5 +1,11 @@
 @import "styles.scss";
 
+@media screen and (max-width: 1500px) {
+  #subContent aside img {
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .mobileHeader {
     width: 100%;
