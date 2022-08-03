@@ -32,8 +32,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: coming soon
-- Live Site URL: coming soon
+- Solution URL: https://www.frontendmentor.io/solutions/room-home-page-react-sass-LNKrWXgKkK
+- Live Site URL: https://fm-roomhomepage.netlify.app/
 
 ### Built with
 
@@ -43,7 +43,8 @@ Your users should be able to:
 - React
 
 ### What I learned
-Honestly, I learned how to breathe when I spend several hours trying to solve a problem but don't succeed...
+Honestly, I learned how to breathe when I spend several hours trying to solve a problem but don't succeed...they didn't put the chllenge in the "Intermediate" section for nothing!
+I absolutely wanted to make my own slider. This is what took me an awful amount of time. But even if I know it's not perfect, it works pretty well and that's great!
 
  ## Author
 
