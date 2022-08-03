@@ -1,0 +1,183 @@
+@import "styles.scss";
+
+@media screen and (max-width: 992px) {
+  .mobileHeader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    transition: 0.5s ease-out;
+
+    i {
+      padding-right: 3em;
+      color: var(--white);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    section {
+      position: absolute;
+      top: 2.5em;
+      left: 2.5em;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+    }
+
+    nav {
+      padding: 1.5em 2em;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      transform: translateY(-6.5em);
+      z-index: 5;
+      transition: 0.5s ease-out;
+    }
+
+    a {
+      color: var(--black);
+      text-decoration: none;
+    }
+  }
+
+  .sliderDirections {
+    min-width: 160px;
+    right: -160px;
+
+    button {
+      height: 5em;
+    }
+  }
+
+  #subContent {
+    object-fit: cover;
+  }
+
+  .mobileHeader.active {
+    transform: translateY(0);
+    transition: 0.5s ease-out;
+
+    .blackBcg {
+    position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    top: 0;
+    width: 100%;
+    height: 184vh;
+    z-index: 4;
+    transition: 0.5s ease-out;
+  }
+
+    section {
+      i {
+        color: var(--black);
+      }
+
+      img {
+        visibility: hidden;
+      }
+    }
+
+    nav {
+      transform: translateY(0);
+      transition: 0.5s ease-out;
+      background-color: var(--white);
+    }
+  }
+
+  main section,
+  #sliderComponent,
+  #subContent {
+    display: block;
+    width: auto;
+    height: fit-content;
+    max-height: none;
+  }
+
+  #sliderComponent {
+    picture,
+    img {
+      object-fit: cover;
+      object-position: 60% 70%;
+    }
+
+    article {
+      padding: 7em;
+    }
+  }
+
+  .sliderDirections {
+    right: 0;
+    bottom: 3px;
+    z-index: 2;
+  }
+
+  #subContent {
+    img {
+      object-fit: cover;
+    }
+
+    article {
+      padding: 7em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sliderComponent picture img {
+    object-fit: fill;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .mobileHeader {
+    section {
+      top: 0;
+      left: 0;
+      padding: 2.5em;
+      padding-right: 0.75em;
+      width: 100%;
+      img {
+        padding-right: calc(100% - 80%);
+      }
+    }
+
+    li {
+      padding: 0em 1em;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+
+  #sliderComponent article,
+  #subContent article {
+    padding: 3.5em 2em;
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  .sliderDirections {
+    min-width: 130px;
+
+    button {
+      height: 4.5em;
+    }
+
+    svg {
+      transform: scale(0.85);
+    }
+  }
+}
