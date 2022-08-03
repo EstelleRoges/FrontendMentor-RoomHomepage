@@ -1,6 +1,6 @@
 # Frontend Mentor - Room homepage
 
-![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Room homepage coding challenge](../design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -43,8 +43,8 @@ Your users should be able to:
 - React
 
 ### What I learned
-Honestly, I learned how to breathe when I spend several hours trying to solve a problem but don't succeed...they didn't put the chllenge in the "Intermediate" section for nothing!
-I absolutely wanted to make my own slider. This is what took me an awful amount of time. But even if I know it's not perfect, it works pretty well and that's great!
+Honestly, I learned how to breathe when I spend several hours trying to solve a problem but don't succeed...they didn't put the chllenge in the "Intermediate" section for nothing! Or I really have to make some serious progress...
+The slider is what took me an awful amount of time. But even if I know it's not perfect, it works pretty well and that's great!
 
  ## Author
 
