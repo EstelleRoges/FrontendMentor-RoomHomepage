@@ -1,5 +1,11 @@
 @import "styles.scss";
 
+@media screen and (min-width: 1500px) {
+  picture img {
+    object-position: 0 25%;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   #subContent aside img {
     object-fit: cover;
