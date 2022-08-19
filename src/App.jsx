@@ -6,25 +6,25 @@ import DesktopMenu from "./components/menus/desktopMenu/DesktopMenu";
 import MainComponent from "./components/hero/MainComponent";
 import SubContent from "./components/subContent/SubContent";
 import Attribution from "./components/attribution/Attribution";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const App = () => {
-  const [navType, setNavType] = useState(<DesktopMenu />);
+  // const [navType, setNavType] = useState(<DesktopMenu />);
 
-  useEffect(() => {
-    const changeNav = () => {
-      if (window.innerWidth <= 992) {
-        setNavType(<MobileMenu />);
-      } else {
-        setNavType(<DesktopMenu />);
-      }
-    };
-    window.addEventListener("resize", changeNav);
-  }, []);
+  // useEffect(() => {
+  //   const changeNav = () => {
+  //     if (window.innerWidth <= 992) {
+  //       setNavType(<MobileMenu />);
+  //     } else {
+  //       setNavType(<DesktopMenu />);
+  //     }
+  //   };
+  //   window.addEventListener("resize", changeNav);
+  // }, []);
 
   return (
     <BrowserRouter>
-      {navType}
+      {window.innerWidth <= 992 ? <MobileMenu /> : <DesktopMenu />}
       <MainComponent />
       <SubContent />
       <Attribution />
