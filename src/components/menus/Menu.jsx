@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-const MobileMenu = () => {
+const Menu = () => {
   const [mode, setMode] = useState(false);
+  const [navMode, setNavMode] = useState(false);
 
   const changeMode = () => {
     setMode(!mode);
@@ -12,9 +13,24 @@ const MobileMenu = () => {
     setMode(false);
   };
 
+  const showNavBtn = () => {
+    if (window.innerWidth <= 992) {
+      setNavMode(true);
+    } else {
+      setNavMode(false);
+    }
+  };
+
+  useEffect(() => {
+    showNavBtn();
+  }, []);
+
+  window.addEventListener('resize', showNavBtn);
+
   return (
     <>
-      <header className={mode ? "mobileHeader active" : "mobileHeader"}>
+      <header className={navMode ? 
+      mode? "mobileHeader active" : "mobileHeader": "header"}>
         <div className="blackBcg">
           <section className="logoMenu">
             <i
@@ -53,4 +69,4 @@ const MobileMenu = () => {
   );
 };
 
-export default MobileMenu;
+export default Menu;
